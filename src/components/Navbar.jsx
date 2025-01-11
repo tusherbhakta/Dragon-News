@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import loginIcon from '../assets/user.png'
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
                 <div className=''>
                     <img src={loginIcon} alt="" className='w-full' />
                 </div>
-                <button className='bg-[#403F3F] font-bold text-white px-5 py-2'>Login</button>
+                <Link to={'/auth/login'} className='bg-[#403F3F] font-bold text-white px-5 py-2'>Login</Link>
             </div>
         </div>
     );
