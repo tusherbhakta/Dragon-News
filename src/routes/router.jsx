@@ -4,6 +4,7 @@ import CenterContent from "../components/layoutComponents/CenterContent";
 import CategoryNews from "../components/pages/CategoryNews";
 import AuthLayout from "../layouts/AuthLayout";
 import { Children } from "react";
+import Login from "../components/pages/Login";
 
 const router = createBrowserRouter([
     {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/auth/login',
-                element: <h2>Login</h2>,
+                element: <Login></Login>,
             },
             {
                 path: '/auth/register',
