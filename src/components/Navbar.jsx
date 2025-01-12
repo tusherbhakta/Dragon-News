@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className="flex justify-between items-center">
             <div className="">
-                {user && user.name}
+                {user && user.email}
             </div>
             <div className="text-[#706F6F] text-lg justify-center flex flex-1 space-x-4">
                 <Link to='/'>Home</Link>
