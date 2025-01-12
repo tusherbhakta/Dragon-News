@@ -5,6 +5,8 @@ import CategoryNews from "../components/pages/CategoryNews";
 import AuthLayout from "../layouts/AuthLayout";
 import { Children } from "react";
 import Login from "../components/pages/Login";
+import Register from "../components/pages/Register";
+
 
 const router = createBrowserRouter([
     {
@@ -32,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/auth/register',
-                element: <h2>Register</h2>,
+                element: <Register></Register>
             },
         ]
     },

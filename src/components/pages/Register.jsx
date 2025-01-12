@@ -1,12 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Register = () => {
     return (
-        <div className='min-h-screen flex justify-center items-center'>
+        <div className='min-h-screen my-10 flex justify-center items-center'>
             <div className="card bg-base-100 w-full max-w-lg shrink-0 shadow-2xl">
                 <form className="card-body">
-                    <h2 className="font-semibold text-center my-10 text-3xl">Login your account</h2>
+                    <h2 className="font-semibold text-center my-10 text-3xl">Register your account</h2>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Name</span>
+                        </label>
+                        <input type="text" placeholder="name" className="input input-bordered" required />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Photo-url</span>
+                        </label>
+                        <input type="text" placeholder="photo-url" className="input input-bordered" required />
+                    </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>
@@ -23,13 +35,13 @@ const Login = () => {
                         </label>
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Login</button>
+                        <button className="btn btn-primary">Register</button>
                     </div>
-                    <p className='my-6 text-center'>Dont’t Have An Account ? <Link to="/auth/register" className='text-[#F75B5F]'>Register</Link></p>
+                    <p className='my-6 text-center'>Dont't Have An Account ? <Link to="/auth/login" className='text-[#F75B5F]'>Login</Link></p>
                 </form>
             </div>
         </div>
     );
 };
 
-export default Login;
+export default Register;
