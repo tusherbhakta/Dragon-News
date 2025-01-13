@@ -7,6 +7,7 @@ import { Children } from "react";
 import Login from "../components/pages/Login";
 import Register from "../components/pages/Register";
 import News from "../components/pages/News";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/news/:id',
-        element: <News></News>,
+        element: <PrivateRoute><News></News></PrivateRoute>,
         loader: ({params})=> fetch(`https://openapi.programming-hero.com/api/news/${params.id}`),
     },
     {
