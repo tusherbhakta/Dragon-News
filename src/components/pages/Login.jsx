@@ -1,23 +1,39 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const Login = () => {
+    const {setUser, userSignIn} =useContext(AuthContext);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const from = e.target;
+        const email = from.email.value;
+        const password = from.password.value;
+        userSignIn(email, password)
+        .then((result)=>{
+            const user = result.user;
+            setUser(user);
+        })
+        .catch((error)=>{
+            alert('Invalid email or password! Try again')
+        })
+    } 
     return (
         <div className='min-h-screen flex justify-center items-center'>
             <div className="card bg-base-100 w-full max-w-lg shrink-0 shadow-2xl">
-                <form className="card-body">
+                <form onSubmit={handleSubmit} className="card-body">
                     <h2 className="font-semibold text-center my-10 text-3xl">Login your account</h2>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" name='email' placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
-                        <input type="password" placeholder="password" className="input input-bordered" required />
+                        <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                         <label className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
