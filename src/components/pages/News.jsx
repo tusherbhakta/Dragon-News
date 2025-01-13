@@ -14,12 +14,12 @@ const News = () => {
             <header>
                 <Header />
             </header>
-            <main className="w-11/12 mx-auto grid grid-cols-12 gap-5">
-                <section className="col-span-9">
+            <main className="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5">
+                <section className="col-span-1 lg:col-span-9">
                     <h2 className="font-semibold text-xl mb-4 text-left">Dragon News</h2>
                     <div className="card bg-base-100 shadow-xl">
                         {/* Image Section */}
-                        <figure className="w-full">
+                        <figure className="w-full p-8">
                             <img
                                 src={news.image_url}
                                 alt={news.title}
@@ -41,7 +41,7 @@ const News = () => {
                         </div>
                     </div>
                 </section>
-                <aside className="col-span-3">
+                <aside className="col-span-1 lg:col-span-3">
                     <RightNav />
                 </aside>
             </main>
