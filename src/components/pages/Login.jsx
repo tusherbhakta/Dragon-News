@@ -50,7 +50,7 @@ const Login = () => {
                     <div className="form-control mt-6">
                         <button className="btn btn-primary">Login</button>
                     </div>
-                    <p className='my-6 text-center'>Dont’t Have An Account ? <Link to="/auth/register" className='text-[#F75B5F]'>Register</Link></p>
+                    <p className='my-6 text-center'>Dont't Have An Account ? <Link to="/auth/register" className='text-[#F75B5F]'>Register</Link></p>
                 </form>
             </div>
         </div>
