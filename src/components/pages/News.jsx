@@ -7,7 +7,7 @@ import { FaArrowLeft } from 'react-icons/fa'; // Import the left arrow icon
 const News = () => {
     const data = useLoaderData();
     const news = data.data[0];
-    console.log(data);
+    // console.log(data);
 
     return (
         <div>

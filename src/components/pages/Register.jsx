@@ -13,7 +13,7 @@ const Register = () => {
         const email = form.get('email');
         const photo = form.get('photo');
         const password = form.get('password');
-        console.log(name, email, photo, password) 
+        // console.log(name, email, photo, password) 
 
         createNewUser(email, password)
         .then((result) => {
@@ -24,11 +24,11 @@ const Register = () => {
                 navigate("/")
             })
             .catch((err)=>{
-                console.log(err);
+                // console.log(err);
             })
         })
         .catch(error =>{
-            console.log('Error', error.message);
+            // console.log('Error', error.message);
         })
     }
     return (
