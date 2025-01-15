@@ -1,8 +1,17 @@
-# React + Vite
+Dragon News - A Modern News Portal
+Dragon News is a dynamic and user-friendly news portal website designed to provide the latest news to users. The platform includes robust user authentication, ensuring secure and personalized access to content.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Key Features
+Firebase Authentication: Users can register, log in, and securely access private routes.
+Private Routes: News details are restricted to logged-in users only, enhancing content exclusivity.
+User Registration & Login: A seamless experience for creating accounts and accessing personalized features.
+Technologies Used
+React: For building the interactive user interface.
+Firebase: For authentication and hosting.
+Git & GitHub: For version control and collaboration.
+Tailwind CSS & DaisyUI: For crafting a responsive and visually appealing design.
+Hosting
+The application is deployed on Firebase Hosting, ensuring fast and reliable delivery to users.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live Demo
+Check out the live site: Dragon News
