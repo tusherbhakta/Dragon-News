@@ -14,4 +14,4 @@ Hosting
 The application is deployed on Firebase Hosting, ensuring fast and reliable delivery to users.
 
 Live Demo
-Check out the live site: Dragon News
+Check out the live site: [Dragon News](https://dragon-news-m52-ed315.web.app/)
