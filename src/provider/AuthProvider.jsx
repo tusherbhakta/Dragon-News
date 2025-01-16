@@ -26,7 +26,8 @@ const AuthProvider = ({children}) => {
     const updateUserProfile = (updatedData) =>{
         return updateProfile(auth.currentUser, updatedData);
     };
-    const signUpWithGoogle = (provider) => {
+    const signUpWithGoogle = () => {
+        setLoading(true);
         return signInWithPopup(auth, provider)
     }
     
