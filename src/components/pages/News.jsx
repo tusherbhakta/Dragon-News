@@ -33,7 +33,7 @@ const News = () => {
                             <div className="card-actions">
                                 <Link
                                     to={`/category/${news?.category_id}`}
-                                    className="btn mt-8 flex items-center gap-2 btn-primary"
+                                    className="btn mt-8 flex items-center mb-4 gap-2 hover:bg-cyan-200 hover:text-black btn-primary"
                                 >
                                     <FaArrowLeft /> Back to Category
                                 </Link>
