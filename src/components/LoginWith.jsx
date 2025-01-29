@@ -3,7 +3,7 @@ import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { AuthContext } from '../provider/AuthProvider';
 
 const LoginWith = () => {
-    const { user, signUpWithGoogle } = useContext(AuthContext);
+    const {signUpWithGoogle } = useContext(AuthContext);
     const handleLogInWithGoogle = async (e) => {
         e.preventDefault();
         const res = await signUpWithGoogle()
